@@ -44,7 +44,10 @@ In both cases, training is done in two phases:
 
 A convolutional neural network takes an image as input and predicts a class for this image.
 
-The CNN backbone can be : - a MobileNetV2 feature extractor (<https://tfhub.dev/google/imagenet/mobilenet_v2_140_224/feature_vector/4>) - an EfficientNet V2 S feature extractor (<https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet21k_s/feature_vector/2>) - an EfficientNet V2 XL feature extractor (<https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet21k_ft1k_xl/feature_vector/2>)
+The CNN backbone can be : 
+- a MobileNetV2 feature extractor (<https://tfhub.dev/google/imagenet/mobilenet_v2_140_224/feature_vector/4>)
+- an EfficientNet V2 S feature extractor (<https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet21k_s/feature_vector/2>)
+- an EfficientNet V2 XL feature extractor (<https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet21k_ft1k_xl/feature_vector/2>)
 
 A classification head with the number of classes to predict is added on top of the backbone. Intermediate fully connected layers with customizable dropout rate can be inserted between both.
 

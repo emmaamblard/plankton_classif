@@ -92,6 +92,6 @@ After training, an output directory is created (by default `./grid_search_classi
 
 After all trainings are performed, classification performance are assessed:
 
--   `classification_report.py` generates all classification reports as csv files into `./classification_performance`
--   `detailed_metrics.py` computes all classification metrics and writes them into `./classification_performance/prediction_metrics.csv`
--   `make_plots.R` reads the content of `./classification_performance/prediction_metrics.csv` and generates figures for the paper, saved in `./figures`
+-   `classification_report.py` generates all classification reports as csv files into `./perf`
+-   `detailed_metrics.py` computes all classification metrics and writes them into `./perf/prediction_metrics.csv`
+-   `make_plots.R` reads the content of `./perf/prediction_metrics.csv` and generates figures for the paper, saved in `./figures`

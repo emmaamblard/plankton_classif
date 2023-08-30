@@ -1,3 +1,10 @@
+#--------------------------------------------------------------------------#
+# Project: plankton_classif
+# Script purpose: Compute performance metrics for all models on all datasets.
+# Date: 30/08/2023
+# Author: Thelma Panaïotis
+#--------------------------------------------------------------------------#
+
 import glob
 import pandas as pd
 import numpy as np
@@ -13,7 +20,7 @@ args = parser.parse_args()
 predictions_path = args.predictions_path
 
 # Create dir to store reports
-save_dir = 'classification_performance'
+save_dir = 'perf'
 os.makedirs(save_dir, exist_ok=True)
 
 

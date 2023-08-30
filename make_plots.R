@@ -1,7 +1,7 @@
 #--------------------------------------------------------------------------#
-# Project: plankton_classif_benchmark
+# Project: plankton_classif
 # Script purpose: Generate plots for paper
-# Date: 02/08/2023
+# Date: 30/08/2023
 # Author: Thelma Panaïotis
 #--------------------------------------------------------------------------#
 
@@ -15,7 +15,7 @@ dir.create("figures", showWarnings = FALSE)
 ## Read and format results ----
 #--------------------------------------------------------------------------#
 
-df <- read_csv("classification_performance/prediction_metrics.csv", col_types = cols())
+df <- read_csv("perf/prediction_metrics.csv", col_types = cols())
 
 # is "mobilenet_acp50_rf_deep" the same as "mobilenet_pca50_rf"
 # is "mobilenet_noacp_rf_deep" the same as "mobilenet_rf"
